@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    tools:context="com.example.bessie.prequiz.MainActivity">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#D32F2F"
+       android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="QuizApp"
+          android:textSize="54sp"
+        android:textColor="@android:color/white" />
+
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:id="@+id/imageView3"
+          android:layout_margin="5dp"
+          android:src="@drawable/setting"
+          />
+
+   </LinearLayout>
+
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Select Your Quiz To Start."
+       android:textSize="25sp"
+       android:textColor="#3F51B5"
+       android:layout_margin="35dp"
+       />
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Match the image"
+       android:background="@drawable/round_buttons"
+       android:layout_margin="10dp"
+       android:id="@+id/matchFruit"
+       android:onClick="nextpage"/>
+
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="true or false"
+       android:background="@drawable/round_buttons"
+       android:layout_margin="10dp"
+       android:id="@+id/button2"
+       android:onClick="nextpage"/>
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="multiple choice"
+       android:background="@drawable/round_buttons"
+       android:layout_margin="10dp"
+       android:id="@+id/button3"
+       android:onClick="nextpage"/>
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Random Question"
+       android:background="@drawable/round_buttons"
+       android:layout_margin="10dp"
+       android:id="@+id/button4"
+       android:onClick="nextpage"/>
+
+
+
+</LinearLayout>
+
