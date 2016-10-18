@@ -34,7 +34,7 @@
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:indeterminate="false"
+            android:indeterminate="true"
             android:max="100"
             android:progress="40"
             android:layout_margin="12dp"
@@ -64,7 +64,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Animal"
+        android:text="Pineapple"
         android:gravity="center"
         android:textSize="30dp"
         android:background="@drawable/round_buttons"
@@ -167,6 +167,7 @@
             android:src="@drawable/pineapple"
             android:background="@drawable/image_borders"
             android:onClick="correct"/>
+
         <ImageView
             android:layout_width="101dp"
             android:layout_weight="1"

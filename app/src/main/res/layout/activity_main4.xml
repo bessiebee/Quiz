@@ -34,7 +34,7 @@
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:indeterminate="false"
+            android:indeterminate="true"
             android:max="100"
             android:progress="40"
             android:layout_margin="12dp"
@@ -65,7 +65,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pets"
+        android:text="Fish"
         android:gravity="center"
         android:textSize="30dp"
         android:background="@drawable/round_buttons"
@@ -84,7 +84,7 @@
             android:layout_weight="1"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:src="@drawable/cheese"
+            android:src="@drawable/cat"
             android:background="@drawable/image_borders"
             android:id="@+id/cucumber1"
             android:onClick="incorrect"/>
@@ -95,7 +95,7 @@
             android:layout_weight="1"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:src="@drawable/spinach"
+            android:src="@drawable/p"
             android:background="@drawable/image_borders"
             android:id="@+id/banana1"
             android:onClick="incorrect"/>
@@ -105,7 +105,7 @@
             android:layout_weight="1"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:src="@drawable/cucumber"
+            android:src="@drawable/pet"
             android:background="@drawable/image_borders"
             android:id="@+id/redpepper1"
             android:onClick="incorrect"/>
@@ -121,7 +121,7 @@
             android:layout_width="101dp"
             android:layout_height="84dp"
             android:layout_margin="10dp"
-            android:src="@drawable/strawberry"
+            android:src="@drawable/pett"
             android:background="@drawable/image_borders"
             android:id="@+id/pineapple1"
             android:onClick="incorrect"/>
@@ -129,7 +129,7 @@
             android:layout_width="101dp"
             android:layout_height="84dp"
             android:layout_margin="10dp"
-            android:src="@drawable/carrot"
+            android:src="@drawable/pettt"
             android:background="@drawable/image_borders"
             android:id="@+id/chesse1"
             android:onClick="incorrect"/>
@@ -137,7 +137,7 @@
             android:layout_width="101dp"
             android:layout_height="84dp"
             android:layout_margin="10dp"
-            android:src="@drawable/redpepper"
+            android:src="@drawable/petttt"
             android:id="@+id/strawberry1"
             android:background="@drawable/image_borders"
             android:onClick="incorrect"/>
@@ -156,7 +156,7 @@
             android:layout_weight="1"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:src="@drawable/cucumber"
+            android:src="@drawable/dog"
             android:background="@drawable/image_borders"
             android:onClick="incorrect"/>
 
@@ -165,17 +165,17 @@
             android:layout_weight="1"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:src="@drawable/pineapple"
+            android:src="@drawable/dachshund"
             android:background="@drawable/image_borders"
-            android:onClick="correct"/>
+            android:onClick="incorrect"/>
         <ImageView
             android:layout_width="101dp"
             android:layout_weight="1"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:src="@drawable/banana"
+            android:src="@drawable/fish"
             android:background="@drawable/image_borders"
-            android:onClick="incorrect"/>
+            android:onClick="correct"/>
 
     </LinearLayout>
 
@@ -188,10 +188,8 @@
         android:text="hint"
         android:background="@drawable/round_buttons"
         android:layout_margin="15dp"
-        android:onClick="next"
+        android:onClick="hint"
         />
-
-
 
 
 </LinearLayout>

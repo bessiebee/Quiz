@@ -1,6 +1,7 @@
 package com.example.bessie.prequiz;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.wifi.p2p.WifiP2pManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,9 +10,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static com.example.bessie.prequiz.R.anim.shake;
+
 public class Main2Activity extends AppCompatActivity /*implements View.OnClickListener */{
 
     private TextView answer;
+    private MediaPlayer song;
+    private ImageView image1;
+    private int score = 0;
+
     /* private ImageView image1,image2,image3,image4,image5,image6,image7,image8,image9;
      private String[] array = {"cucumber","banana","red paper","pine apple","cheese","strawberry","carrot","hhhhhhh","bbbbbb"};*/
     @Override
@@ -19,10 +26,14 @@ public class Main2Activity extends AppCompatActivity /*implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        song = MediaPlayer.create(this,R.raw.playlist);
+        image1 = (ImageView)findViewById(R.id.banana1);
+
+        song.start();
+
 
         answer= (TextView)findViewById(R.id.display);
-        /*image1 = (ImageView)findViewById(R.id.cucumber1);
-        image2 = (ImageView)findViewById(R.id.banana1);
+        /*image2 = (ImageView)findViewById(R.id.banana1);
         image3 = (ImageView)findViewById(R.id.redpepper1);
         image4 = (ImageView)findViewById(R.id.pineapple1);
         image5 = (ImageView)findViewById(R.id.chesse1);
@@ -44,10 +55,14 @@ public class Main2Activity extends AppCompatActivity /*implements View.OnClickLi
     }
 
     public void correct (View v){
-
+        score += 20;
         Intent intent = new Intent(getBaseContext(),Main3Activity.class);
+        intent.putExtra("score",score);
         startActivity(intent);
     }
+
+
+
 
    /*public void correct(View v){
 
@@ -56,8 +71,9 @@ public class Main2Activity extends AppCompatActivity /*implements View.OnClickLi
     }*/
 
     public void incorrect(View v){
-
-        answer.setText("Oops! Wrong Answer");
+        Intent intent = new Intent(getBaseContext(),Main3Activity.class);
+        intent.putExtra("score",score);
+        startActivity(intent);
     }
 
     public void hint (View v){
@@ -70,6 +86,8 @@ public class Main2Activity extends AppCompatActivity /*implements View.OnClickLi
     public void home (View v) {
         Intent intent = new Intent(getBaseContext(), MainActivity.class);
         startActivity(intent);
+        onPause();
+        finish();
     }
 
 
@@ -85,6 +103,12 @@ public class Main2Activity extends AppCompatActivity /*implements View.OnClickLi
             }
         }
     }*/
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        song.release();
+    }
 
 
 }

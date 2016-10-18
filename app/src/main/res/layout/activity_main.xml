@@ -45,7 +45,7 @@
    <Button
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:text="Match the image"
+       android:text="Match the fruits"
        android:background="@drawable/round_buttons"
        android:layout_margin="10dp"
        android:id="@+id/matchFruit"
@@ -55,16 +55,16 @@
    <Button
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:text="true or false"
+       android:text="Match the Components"
        android:background="@drawable/round_buttons"
        android:layout_margin="10dp"
        android:id="@+id/button2"
-       android:onClick="nextpage"/>
+       android:onClick="components"/>
 
    <Button
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:text="multiple choice"
+       android:text="my computer"
        android:background="@drawable/round_buttons"
        android:layout_margin="10dp"
        android:id="@+id/button3"
