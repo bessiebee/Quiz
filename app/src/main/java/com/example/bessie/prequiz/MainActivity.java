@@ -27,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void programming (View v){
+
+        Intent intent = new Intent(getBaseContext(),rogramming1Ques.class);
+        startActivity(intent);
+
+    }
+
     @Override
     protected void onPause() {
         super.onPause();

@@ -64,7 +64,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Netwrok Card"
+        android:text="Network Card"
         android:gravity="center"
         android:textSize="30dp"
         android:id="@+id/display"
@@ -97,7 +97,7 @@
             android:src="@drawable/monitor"
             android:background="@drawable/image_borders"
             android:id="@+id/banana1"
-            android:onClick="correct"
+            android:onClick="incorrect"
             />
 
         <ImageView
@@ -140,7 +140,7 @@
             android:src="@drawable/networkcard"
             android:id="@+id/strawberry1"
             android:background="@drawable/image_borders"
-            android:onClick="incorrect"/>
+            android:onClick="correct"/>
 
     </LinearLayout>
 

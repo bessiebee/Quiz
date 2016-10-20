@@ -64,11 +64,11 @@
    <Button
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:text="my computer"
+       android:text="Programming"
        android:background="@drawable/round_buttons"
        android:layout_margin="10dp"
        android:id="@+id/button3"
-       android:onClick="nextpage"/>
+       android:onClick="programming"/>
 
    <Button
        android:layout_width="match_parent"
