@@ -27,7 +27,8 @@
             android:layout_height="wrap_content"
             android:text="Fruits"
             android:textColor="#FAFAFA"
-            android:padding="12dp"/>
+            android:padding="12dp"
+            />
 
         <ProgressBar
             android:id="@+id/progress_bar"
