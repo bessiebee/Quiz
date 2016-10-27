@@ -41,6 +41,7 @@ public class Main6Activity extends AppCompatActivity {
         score+=20;
         intent.putExtra("score",score);
         startActivity(intent);
+
     }
     public void home (View v){
         Intent intent = new Intent (getBaseContext(),MainActivity.class);

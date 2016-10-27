@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     android:background="#F5F5F5"
     android:orientation="vertical"
-    tools:context="com.example.bessie.prequiz.rogramming1Ques">
-
+    tools:context="com.example.bessie.prequiz.programming4">
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -75,7 +74,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Shortcut to Paste"
+        android:text="Shortcut to Undo"
         android:textSize="25sp"
         android:id="@+id/textView"
         android:textStyle="bold"
@@ -91,12 +90,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="6dp"
-            android:text="Shift + C"
+            android:text="Ctrl + U"
             android:textSize="25sp"
-            android:onClick="incorrect"
             android:textColor="#424242"
-
-
+            android:onClick="incorrect"
 
             />
 
@@ -104,7 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="6dp"
-            android:text="Ctrl + V"
+            android:text="Ctrl + Z"
             android:textSize="25sp"
             android:layout_marginTop="15dp"
             android:textColor="#424242"
@@ -116,7 +113,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="6dp"
-            android:text="Shift + V"
+            android:text="Shift + Y"
             android:textSize="25sp"
             android:layout_marginTop="15dp"
             android:textColor="#424242"
@@ -127,7 +124,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="6dp"
-            android:text="Ctrl + P"
+            android:text="Ctrl + U + N"
             android:layout_marginTop="15dp"
             android:textSize="25sp"
             android:textColor="#424242"
@@ -137,6 +134,5 @@
 
 
     </RadioGroup>
-
 
 </LinearLayout>

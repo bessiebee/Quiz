@@ -4,30 +4,26 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
-public class rogramming1Ques extends AppCompatActivity {
-    private int score=0;
-
+public class programming3 extends AppCompatActivity {
+    private int score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rogramming1_ques);
-
-
+        setContentView(R.layout.activity_programming3);
+        score = getIntent().getIntExtra("score",0);
     }
     public void incorrect(View v) {
 
-        Intent intent = new Intent(getBaseContext(), programmin2.class);
+        Intent intent = new Intent(getBaseContext(), programming4.class);
         intent.putExtra("score", score);
         startActivity(intent);
     }
 
     public void correct (View v){
         score+=20;
-        Intent intent = new Intent(getBaseContext(),programmin2.class);
+        Intent intent = new Intent(getBaseContext(),programming4.class);
         intent.putExtra("score",score);
         startActivity(intent);
     }
-
 }

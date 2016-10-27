@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#F5F5F5"
     android:orientation="vertical"
-    tools:context="com.example.bessie.prequiz.rogramming1Ques">
+    tools:context="com.example.bessie.prequiz.programmin2">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -75,7 +75,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Shortcut to Paste"
+        android:text="Shortcut to Copy"
         android:textSize="25sp"
         android:id="@+id/textView"
         android:textStyle="bold"
@@ -93,10 +93,8 @@
             android:layout_marginLeft="6dp"
             android:text="Shift + C"
             android:textSize="25sp"
-            android:onClick="incorrect"
             android:textColor="#424242"
-
-
+            android:onClick="incorrect"
 
             />
 
@@ -104,39 +102,38 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="6dp"
-            android:text="Ctrl + V"
+            android:text="Ctrl + C + O"
             android:textSize="25sp"
             android:layout_marginTop="15dp"
+            android:textColor="#424242"
+            android:onClick="incorrect"
+
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="Shift + X"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:textColor="#424242"
+            android:onClick="incorrect"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="Ctrl + C"
+            android:layout_marginTop="15dp"
+            android:textSize="25sp"
             android:textColor="#424242"
             android:onClick="correct"
 
             />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="6dp"
-            android:text="Shift + V"
-            android:textSize="25sp"
-            android:layout_marginTop="15dp"
-            android:textColor="#424242"
-            android:onClick="incorrect"
-
-            />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="6dp"
-            android:text="Ctrl + P"
-            android:layout_marginTop="15dp"
-            android:textSize="25sp"
-            android:textColor="#424242"
-            android:onClick="incorrect"
-
-            />
-
 
     </RadioGroup>
-
 
 </LinearLayout>
